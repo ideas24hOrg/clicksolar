@@ -106,5 +106,7 @@ export default defineConfig({
     clientPrerender: true,
     directRenderScript: true,
   },
-  adapter: vercelStatic(),
+  /* Cambiar  a Firebase  adapter: vercelStatic(),
+   */
+  outDir: './dist'
 });

@@ -12,42 +12,35 @@ export default defineConfig({
   image: {
     domains: ["images.unsplash.com"],
   },
-  i18n: {
-    defaultLocale: "en",
-    locales: ["en", "fr"],
-    fallback: {
-      fr: "en",
-    },
-    routing: {
-      prefixDefaultLocale: false,
-    },
-  },
+
   prefetch: true,
   integrations: [
     tailwind(),
     sitemap({
       i18n: {
-        defaultLocale: "en", // All urls that don't contain `fr` after `https://screwfast.uk/` will be treated as default locale, i.e. `en`
-        locales: {
-          en: "en", // The `defaultLocale` value must present in `locales` keys
-          fr: "fr",
-        },
+
+      
       },
     }),
     starlight({
-      title: "ScrewFast Docs",
-      defaultLocale: "root",
+      title: "ScrewFast ideasthemes",
+      // Set English as the default language for this site.
+      defaultLocale: 'en',
       locales: {
-        root: {
-          label: "English",
-          lang: "en",
+        // English docs in `src/content/docs/en/`
+        en: {
+          label: 'English',
         },
-        de: { label: "Deutsch", lang: "de" },
-        es: { label: "Español", lang: "es" },
-        fa: { label: "Persian", lang: "fa", dir: "rtl" },
-        fr: { label: "Français", lang: "fr" },
-        ja: { label: "日本語", lang: "ja" },
-        "zh-cn": { label: "简体中文", lang: "zh-CN" },
+        // Documentos en español en `src/content/docs/es/`
+        'es': {
+          label: 'Español',
+          lang: 'es',
+        },
+        // Documentos en sueco en `src/content/docs/sv/`
+        sv: {
+          label: 'Svenska',
+          lang: 'sv',
+        },
       },
       // https://starlight.astro.build/guides/sidebar/
       sidebar: [
@@ -56,10 +49,7 @@ export default defineConfig({
           translations: {
             de: "Schnellstartanleitungen",
             es: "Guías de Inicio Rápido",
-            fa: "راهنمای شروع سریع",
-            fr: "Guides de Démarrage Rapide",
-            ja: "クイックスタートガイド",
-            "zh-cn": "快速入门指南",
+            sv: "Snabbstartguider",
           },
           autogenerate: { directory: "guides" },
         },

@@ -1,7 +1,9 @@
 ---
 // Import the necessary components
 import MainLayout from "@/layouts/MainLayout.astro";
-import ComingSoonSection from "@components/sections/landing/HeroSectionAlt.astro";
+import ComingSoonSection from "@components/sections/landing/ComingSoonSection.astro";
+import heroImage from "@images/click-solar-coming-soon.webp";
+
 
 ---
 
@@ -10,6 +12,9 @@ import ComingSoonSection from "@components/sections/landing/HeroSectionAlt.astro
 
   <ComingSoonSection
   title="Our New Website is Coming Soon"
-  subTitle="Stay tuned for the launch of Click Solar, your trusted partner for solar panel installations in Axarquía, Málaga. High-quality solar solutions tailored to your needs."
-/>
+  subTitle="Stay tuned for the launch of Click Solar, your trusted partner for solar panel installations in Axarquía, Málaga. High-quality solar solutions tailored to your needs."  
+  src={heroImage}
+  alt="Click Solar Coming Soon"
+
+  />
 </MainLayout>

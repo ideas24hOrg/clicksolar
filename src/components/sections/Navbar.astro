@@ -8,6 +8,7 @@ import frStrings from "@/utils/sv/navigation";
 import BrandLogo from "@components/BrandLogo.astro";
 import LanguagePicker from "@components/ui/LanguagePicker.astro";
 
+
 // Select the correct translation based on the page's lang prop:
 const strings = Astro.currentLocale === "sv" ? frStrings : enStrings;
 const homeUrl = Astro.currentLocale === "sv" ? "/fr" : "/";
@@ -29,7 +30,7 @@ const homeUrl = Astro.currentLocale === "sv" ? "/fr" : "/";
         href={homeUrl}
         aria-label="Brand"
       >
-        <BrandLogo class="h-auto w-24" />
+      <BrandLogo class="h-auto w-24" />
       </a>
       <!-- Collapse toggle for smaller screens -->
       <div class="ml-auto mr-5 md:hidden">

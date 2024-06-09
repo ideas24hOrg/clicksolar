@@ -15,7 +15,7 @@ import { SITE } from "@data/constants";
 // getStaticPaths is used to pre-render all routes based on the blog posts
 export async function getStaticPaths() {
   const blogPosts = await getCollection("blog", ({ id }) => {
-    return id.startsWith("fr/");
+    return id.startsWith("sv/");
   });
   return blogPosts.map((post) => ({
     params: { slug: post.slug },
@@ -28,7 +28,7 @@ const { post } = Astro.props;
 // Get all blog posts
 const blogPosts: CollectionEntry<"blog">[] = await getCollection("blog",
   ({ id }) => {
-    return id.startsWith("fr/");
+    return id.startsWith("sv/");
   }
 );
 
@@ -159,7 +159,7 @@ const pageTitle: string = `${post.data.title} | ${SITE.title}`;
     </div>
 
     <div class="grid grid-cols-2 gap-6">
-      {relatedPosts.map((entry) => <CardRelated blogEntry={entry} recentBlogLocale="fr" /> )}
+      {relatedPosts.map((entry) => <CardRelated blogEntry={entry} recentBlogLocale="sv" /> )}
     </div>
   </section>
 </MainLayout>

@@ -1,6 +1,27 @@
 ---
-const { class: className } = Astro.props;
-const logoPath = "/src/images/logo.webp"; // Ajusta la ruta si es necesario
+import { Image } from "astro:assets";
+interface Props {
+  title?: string;
+  subTitle?: string;
+  src?: any;
+  alt?: string;
+}
+  // Define props from Astro
+const { src, alt } = Astro.props;
+
 ---
 
-<img src={logoPath} alt="Brand Logo" class={className} />
+<div class="relative mb-6 overflow-hidden md:mb-8">
+    {
+      src && alt && (
+        <Image
+          src={src}
+          alt={alt}
+          class="h-auto w-24"
+          draggable={"false"}
+          format={"avif"}
+          loading={"eager"}
+        />
+      )
+    }
+  </div>

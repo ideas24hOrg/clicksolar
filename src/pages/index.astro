@@ -2,7 +2,10 @@
 // Import the necessary components
 import MainLayout from "@/layouts/MainLayout.astro";
 import ComingSoonSection from "@components/sections/landing/ComingSoonSection.astro";
-import heroImage from "@images/click-solar-coming-soon.webp";
+import heroImage from "@images/corp/logo_completo_color.avif";
+import FeaturesGeneral from "@components/BrandLogo.astro";
+import featureImage from "@images/logo.avif";
+import features from "@data/sv/features.json";
 
 
 ---
@@ -13,8 +16,18 @@ import heroImage from "@images/click-solar-coming-soon.webp";
   <ComingSoonSection
   title="Our New Website is Coming Soon"
   subTitle="Stay tuned for the launch of Click Solar, your trusted partner for solar panel installations in Axarquía, Málaga. High-quality solar solutions tailored to your needs."  
-  src={heroImage}
-  alt="Click Solar Coming Soon"
 
   />
+
+  <FeaturesGeneral
+    title="Meeting Industry Demands"
+    subTitle="At ScrewFast, we tackle the unique challenges encountered in the hardware and construction sectors. From cutting-edge tools to expert services, we're dedicated to helping you overcome obstacles and achieve your goals."
+    src={featureImage}
+    alt="logo"
+    features={features}
+  />
+
 </MainLayout>
+
+
+

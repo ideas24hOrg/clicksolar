@@ -1,0 +1,23 @@
+
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import ComingSoonSection from "@components/sections/landing/ComingSoonSection.astro";
+import FeaturesGeneral from "@components/sections/features/FeaturesGeneral.astro";
+import featureImage from "@images/features-image.avif";
+import features from "@data/sv/features.json";
+---
+
+<MainLayout lang="es">
+
+  <ComingSoonSection
+  title="Nuestro nuevo sitio web llegará pronto"
+  subTitle="Mantente atento al lanzamiento de Click Solar, tu socio de confianza para instalaciones de paneles solares en Axarquía, Málaga. Soluciones solares de alta calidad adaptadas a tus necesidades."
+  />
+</MainLayout>
+<FeaturesGeneral
+title="Répondre aux exigences de l'industrie"
+subTitle="Chez ScrewFast, nous relevons les défis uniques rencontrés dans les secteurs du matériel et de la construction. Des outils de pointe aux services experts, nous sommes déterminés à vous aider à surmonter les obstacles et à atteindre vos objectifs."
+src={featureImage}
+alt="Produits ScrewFast dans des boîtes flottantes"
+features={features}
+/>

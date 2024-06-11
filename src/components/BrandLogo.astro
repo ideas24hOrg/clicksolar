@@ -4,10 +4,11 @@ interface Props {
   title?: string;
   subTitle?: string;
   src?: any;
-  alt?: string;
+  alt?: any;
+  class?: any;
 }
   // Define props from Astro
-const { src, alt } = Astro.props;
+const {  class: className, src, alt } = Astro.props;
 
 ---
 
@@ -17,7 +18,7 @@ const { src, alt } = Astro.props;
         <Image
           src={src}
           alt={alt}
-          class="h-auto w-24"
+          class={`h-auto w-24 ${className}`}
           draggable={"false"}
           format={"avif"}
           loading={"eager"}

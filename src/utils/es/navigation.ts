@@ -1,27 +1,26 @@
-
 const navBarLinks = [
-  { name: "Accueil", url: "/fr" },
-  { name: "Produits", url: "/fr/products" },
-  { name: "Services", url: "/fr/services" },
-  { name: "Blog", url: "/fr/blog" },
-  { name: "Contact", url: "/fr/contact" },
+  { name: "Home", url: "/es" },
+/*   { name: "Products", url: "/es/products" },
+  { name: "Services", url: "/es/services" },
+  { name: "Blog", url: "/es/blog" },
+  { name: "Contact", url: "/es/contact" }, */
 ];
 
 const footerLinks = [
   {
-    section: "Écosystème",
+    section: "Ecosystem",
     links: [
-      { name: "Documentation", url: "/fr/welcome-to-docs/" },
-      { name: "Outils et Équipements", url: "/fr/products" },
-      { name: "Services de Construction", url: "/fr/services" },
+/*       { name: "Documentation", url: "/es/welcome-to-docs/" },
+      { name: "Tools and Equipment", url: "/es/products" },
+      { name: "Construction Services", url: "/es/services" }, */
     ],
   },
   {
-    section: "Société",
+    section: "Company",
     links: [
-      { name: "À propos de nous", url: "#" },
-      { name: "Blog", url: "/fr/blog" },
-      { name: "Carrières", url: "#" },
+      { name: "About Us", url: "#" },
+      { name: "Blog", url: "/es/blog" },
+      { name: "Careers", url: "#" },
       { name: "Clients", url: "#" },
     ],
   },

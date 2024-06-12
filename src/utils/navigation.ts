@@ -3,17 +3,17 @@ const navBarLinks = [
   { name: "Home", url: "/" },
 /*   { name: "Products", url: "/products" },
   { name: "Services", url: "/services" },
-  { name: "Blog", url: "/blog" }, */
-  { name: "Contact", url: "/contact" },
+  { name: "Blog", url: "/blog" }, 
+  { name: "Contact", url: "/contact" },*/
 ];
 // An array of links for footer
 const footerLinks = [
   {
     section: "Ecosystem",
     links: [
-      { name: "Documentation", url: "/welcome-to-docs/" },
+/*       { name: "Documentation", url: "/welcome-to-docs/" },
       { name: "Tools & Equipment", url: "/products" },
-      { name: "Construction Services", url: "/services" },
+      { name: "Construction Services", url: "/services" }, */
     ],
   },
   {

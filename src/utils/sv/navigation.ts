@@ -1,28 +1,20 @@
 
 const navBarLinks = [
-  { name: "Accueil", url: "/fr" },
-  { name: "Produits", url: "/fr/products" },
-  { name: "Services", url: "/fr/services" },
-  { name: "Blog", url: "/fr/blog" },
-  { name: "Contact", url: "/fr/contact" },
+  { name: "Hem", url: "/sv" },
 ];
 
 const footerLinks = [
   {
-    section: "Écosystème",
-    links: [
-      { name: "Documentation", url: "/fr/welcome-to-docs/" },
-      { name: "Outils et Équipements", url: "/fr/products" },
-      { name: "Services de Construction", url: "/fr/services" },
-    ],
+    section: "Ekosystem",
+    links: [],
   },
   {
-    section: "Société",
+    section: "Företag",
     links: [
-      { name: "À propos de nous", url: "#" },
-      { name: "Blog", url: "/fr/blog" },
-      { name: "Carrières", url: "#" },
-      { name: "Clients", url: "#" },
+      { name: "Om oss", url: "#" },
+      { name: "Blogg", url: "/sv/blog" },
+      { name: "Karriärer", url: "#" },
+      { name: "Kunder", url: "#" },
     ],
   },
 ];

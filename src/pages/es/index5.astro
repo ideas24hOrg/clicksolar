@@ -1,0 +1,73 @@
+
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import HeroSection from "@components/sections/landing/HeroSection.astro";
+import heroImage from "@images/hero-image.webp";
+---
+
+<MainLayout lang="es">
+  <HeroSection
+    title={`Instala placas solares con <span class="text-yellow-500 dark:text-yellow-400">Click Solar</span>`}
+    subTitle="Soluciones energéticas eficientes y adaptadas a las necesidades de tu hogar o negocio en la Axarquía."
+    primaryBtn="Descubre Más"
+    primaryBtnURL="/services"
+    secondaryBtn="Contáctanos"
+    secondaryBtnURL="/contact"
+    withReview={false}
+    rating={`<span class="font-bold">4.8</span> / 5`}
+    starCount={4}
+    reviews={`De más de <span class="font-bold">1.2k</span> Opiniones`}
+    src={heroImage}
+    alt="Imagen de paneles solares instalados por Click Solar"
+  />
+
+  <section class="py-8 bg-gray-100">
+    <h2 class="text-2xl font-semibold mb-4">Sobre Nosotros</h2>
+    <p>En Click Solar, nos especializamos en la instalación de placas solares en la región de la Axarquía. Con años de experiencia en el sector, ofrecemos soluciones energéticas eficientes y adaptadas a las necesidades de tu hogar o negocio.</p>
+  </section>
+
+  <section class="py-8">
+    <h2 class="text-2xl font-semibold mb-4">Nuestros Servicios</h2>
+    <p>Nuestro equipo de instaladores cuenta con la formación y el conocimiento necesarios para garantizar una instalación segura y duradera. Utilizamos equipos de alta calidad y tecnología avanzada para asegurarnos de que obtengas el máximo rendimiento de tu sistema solar.</p>
+    
+    <h3 class="text-xl font-semibold mt-6 mb-2">Características Destacadas</h3>
+    <ul class="list-disc list-inside ml-4">
+      <li>Instalación profesional y segura</li>
+      <li>Equipos de alta calidad</li>
+      <li>Soluciones personalizadas</li>
+      <li>Soporte continuo y mantenimiento</li>
+    </ul>
+
+    <a href="#" class="inline-block bg-green-500 text-white py-2 px-4 rounded mt-4">Solicita una Cotización</a>
+  </section>
+
+  <section id="compare-systems" class="py-8 bg-white">
+    <h2 class="text-2xl font-semibold mb-4">Comparación de Sistemas Solares y Baterías</h2>
+    <p>Ofrecemos una comparación detallada de diferentes sistemas solares y baterías. Con especificaciones claras, beneficios y garantías para cada opción.</p>
+  </section>
+  
+  <section id="simplified-process" class="py-8 bg-gray-100">
+    <h2 class="text-2xl font-semibold mb-4">Proceso Simplificado</h2>
+    <p>Obtén cotizaciones y asesoramiento a través de un sistema totalmente en línea sin visitas a domicilio. Evaluación digital, personalización del sistema y comparación de precios de múltiples proveedores.</p>
+  </section>
+  
+  <section id="integral-support" class="py-8">
+    <h2 class="text-2xl font-semibold mb-4">Soporte Integral</h2>
+    <p>Servicio integral que incluye diseño detallado del sistema, gestión de permisos y aprobaciones, instalación profesional y garantía de mano de obra.</p>
+  </section>
+  
+  <section id="custom-solutions" class="py-8 bg-white">
+    <h2 class="text-2xl font-semibold mb-4">Soluciones Personalizadas</h2>
+    <p>Ofrecemos soluciones solares personalizadas basadas en las necesidades específicas de cada hogar. Consulta inicial detallada para entender los requerimientos energéticos del cliente.</p>
+  </section>
+  
+  <section id="incentives-financing" class="py-8 bg-gray-100">
+    <h2 class="text-2xl font-semibold mb-4">Incentivos y Financiamiento</h2>
+    <p>Facilitamos el acceso a incentivos gubernamentales y opciones de financiamiento atractivas para hacer más accesible la instalación de sistemas solares.</p>
+  </section>
+  
+  <section id="technical-evaluation" class="py-8">
+    <h2 class="text-2xl font-semibold mb-4">Evaluación Técnica</h2>
+    <p>Realizamos evaluaciones técnicas precisas y detalladas del sitio para garantizar la viabilidad y eficiencia del sistema solar propuesto.</p>
+  </section>
+</MainLayout>

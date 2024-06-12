@@ -1,0 +1,81 @@
+
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import ComingSoonSection from "@components/sections/landing/ComingSoonSection.astro";
+import FeaturesGeneral from "@components/sections/features/FeaturesGeneral.astro";
+import featureImage from "@images/features-image.avif";
+import features from "@data/sv/features.json";
+import HeroSection from "@components/sections/landing/HeroSection.astro";
+import heroImage from "@images/hero-image.webp";
+---
+
+<MainLayout lang="es">
+
+  <HeroSection
+  title={`Instala placas solares con <span class="text-yellow-500 dark:text-yellow-400">Click Solar</span>`}
+  subTitle="Soluciones energéticas eficientes y adaptadas a las necesidades de tu hogar o negocio en la Axarquía."
+  primaryBtn="Descubre Más"
+  primaryBtnURL="/services"
+  secondaryBtn="Contáctanos"
+  secondaryBtnURL="/contact"
+  withReview={false}
+  rating={`<span class="font-bold">4.8</span> / 5`}
+  starCount={4}
+  reviews={`De más de <span class="font-bold">1.2k</span> Opiniones`}
+  src={heroImage}
+  alt="Imagen de paneles solares instalados por Click Solar"
+/>
+
+
+  <section class="py-8">
+    <h2 class="text-2xl font-semibold mb-4">Sobre Nosotros</h2>
+    <p>En Click Solar, nos especializamos en la instalación de placas solares en la región de la Axarquía. Con años de experiencia en el sector, ofrecemos soluciones energéticas eficientes y adaptadas a las necesidades de tu hogar o negocio.</p>
+</section>
+
+<section class="py-8 bg-white">
+    <h2 class="text-2xl font-semibold mb-4">Nuestros Servicios</h2>
+    <p>Nuestro equipo de instaladores cuenta con la formación y el conocimiento necesarios para garantizar una instalación segura y duradera. Utilizamos equipos de alta calidad y tecnología avanzada para asegurarnos de que obtengas el máximo rendimiento de tu sistema solar.</p>
+    
+    <h3 class="text-xl font-semibold mt-6 mb-2">Características Destacadas</h3>
+    <ul class="list-disc list-inside ml-4">
+        <li>Instalación profesional y segura</li>
+        <li>Equipos de alta calidad</li>
+        <li>Soluciones personalizadas</li>
+        <li>Soporte continuo y mantenimiento</li>
+    </ul>
+
+    <a href="#" class="inline-block bg-green-500 text-white py-2 px-4 rounded mt-4">Solicita una Cotización</a>
+</section>
+
+<section class="py-8">
+    <h2 class="text-2xl font-semibold mb-4">Testimonios de Clientes</h2>
+    <div class="bg-gray-50 p-4 rounded shadow mb-4">
+        <p>"Click Solar transformó nuestra casa en un hogar eficiente y ecológico. La instalación fue rápida y profesional." - Ana García, Cliente Satisfecho</p>
+    </div>
+    <div class="bg-gray-50 p-4 rounded shadow">
+        <p>"El equipo de Click Solar fue muy atento y respondió todas nuestras dudas. ¡Ahora ahorramos en nuestra factura de electricidad!" - Carlos López, Cliente Satisfecho</p>
+    </div>
+</section>
+
+<section class="py-8 bg-white">
+    <h2 class="text-2xl font-semibold mb-4">Contáctanos</h2>
+    <p>¿Tienes alguna pregunta? ¡Nos encantaría saber de ti!</p>
+    <p>Email: <a href="mailto:contacto@click-solar.es" class="text-blue-600">contacto@click-solar.es</a></p>
+    <p>Teléfono: <a href="tel:+34123456789" class="text-blue-600">+34 123 456 789</a></p>
+</section>
+
+<section class="py-8">
+    <h2 class="text-2xl font-semibold mb-4">Casos de Éxito</h2>
+    <p>Hemos ayudado a numerosos hogares y negocios a adoptar soluciones energéticas sostenibles. Aquí hay algunos ejemplos:</p>
+    <div class="bg-gray-50 p-4 rounded shadow mb-4">
+        <h3 class="text-xl font-semibold mb-2">Proyecto Residencial en Málaga</h3>
+        <p>Instalamos un sistema solar de 5 kW en una vivienda unifamiliar, reduciendo su factura de electricidad en un 40%.</p>
+    </div>
+    <div class="bg-gray-50 p-4 rounded shadow">
+        <h3 class="text-xl font-semibold mb-2">Proyecto Comercial en Vélez-Málaga</h3>
+        <p>Implementamos una solución solar de 20 kW en una empresa local, mejorando su eficiencia energética y reduciendo costos operativos.</p>
+    </div>
+</section>
+</div>
+
+</MainLayout>
